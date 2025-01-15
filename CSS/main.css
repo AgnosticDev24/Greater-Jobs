@@ -12,6 +12,12 @@ body {
     font-family: "Raleway", serif;
 }
 
+.cv-header {
+    font-size: 2rem;
+    
+    
+}
+
 /* Ensure the navbar stays at the top */
 .navbar {
     transition: background-color 0.1s, opacity 0.1s;

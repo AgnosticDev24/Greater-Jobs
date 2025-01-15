@@ -11,4 +11,6 @@ window.addEventListener('scroll', function () {
 
 function goToJob75677034() { window.location.href = "https://www.greater.jobs/job/75677034"; }
 
+function goToJob75676592() { window.location.href = "https://www.greater.jobs/job/75676592"; }
+
 function closeNav() { document.getElementById('navbarNav').classList.remove('show'); }
