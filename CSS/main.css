@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Universal Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    font-family: "Raleway", serif;
+}
+
+/* Ensure the navbar stays at the top */
+.navbar {
+    transition: background-color 0.1s, opacity 0.1s;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.prismic.io/inploi-greater-jobs/Zj4qCkFLKBtrWyAs_salford-01.jpg?auto=format%2Ccompress&rect=0%2C0%2C5600%2C2700&w=5600&h=2700');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-title {
+    color: white;
+    font-size: max(4.5vh, 4.5vw);/* Responsive font size */
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    font-weight: 800;
+}
+
+p {
+    font-weight: 300;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 250px;
+        background-color: #fff;
+        transition: right 0.3s;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+    }
+
+    .content-wrapper {
+        margin-right: 0;
+        transition: margin-right 0.3s;
+    }
+
+    .navbar-collapse.show+.content-wrapper {
+        margin-right: 250px;
+    }
+}
+
+/* Set navbar link text color to dark */
+.navbar-nav .nav-link {
+    color: #111111;
+}
+
+/* Override active and hover states to ensure dark text */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-item.active .nav-link {
+    color: #0a0a0a;
+}
+/* Close button Styling */
+/* Hide the close button on larger screens */
+@media (min-width: 768px) {
+    .close-btn {
+        display: none;
+    }
+}
+
+.close-btn {
+    font-size: 2rem;
+}
+
+/* --- Close Button ---*/
+
+
+
+/* Image Styling */
+
+.img {
+    border-radius: 4rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* --- Image Styling --- */
+
+/* Button Styling */
+.btn {
+    background-color: #c70a88;
+    color: #f8f9fa;
+    border: none;
+}
+.pulse:hover {
+    animation: pulse-animation 2s;
+    color: azure;
+    border: 1px rgb(203, 247, 11) solid;
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+/* --- Button Styling --- */
+
+
+
+
+@media (max-width: 767px) {
+    .image-container {
+        height: 60vh;
+        background-position: center center;
+        background-size: 200%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .image-title {
+        font-size: 1.5rem;
+    }
+
+    .image-button {
+        margin-top: 10px;
+    }
+}
