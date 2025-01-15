@@ -8,9 +8,13 @@ window.addEventListener('scroll', function () {
     }
 });
 
-
+//BS
 function goToJob75677034() { window.location.href = "https://www.greater.jobs/job/75677034"; }
-
+//WHS
 function goToJob75676592() { window.location.href = "https://www.greater.jobs/job/75676592"; }
+// Assets
+function goToJob75676593() { window.location.href = "https://www.greater.jobs/job/75676593"; }
+
+
 
 function closeNav() { document.getElementById('navbarNav').classList.remove('show'); }

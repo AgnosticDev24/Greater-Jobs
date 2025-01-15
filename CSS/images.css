@@ -1,7 +1,9 @@
 .img-fluid {
-    object-fit: cover;
     padding: 0;
     margin: 0;
+    height: 20rem;
+    max-width: 100%;
+    border-radius: 2rem;
 }
 
 .carousel-item {

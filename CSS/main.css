@@ -13,9 +13,7 @@ body {
 }
 
 .cv-header {
-    font-size: 2rem;
-    
-    
+    font-size: 2.5rem;  
 }
 
 /* Ensure the navbar stays at the top */
@@ -54,8 +52,9 @@ h1, h2 {
 }
 
 p {
-    font-weight: 300;
+    font-weight: 500;
 }
+
 
 @media (max-width: 767px) {
     .navbar-collapse {
@@ -125,10 +124,13 @@ p {
 /* --- Image Styling --- */
 
 /* Button Styling */
-.btn {
+.btn, .search-apply-scc{
     background-color: #c70a88;
     color: #f8f9fa;
     border: none;
+}
+.search-apply-scc {
+    border-radius: 2rem;
 }
 .pulse:hover {
     animation: pulse-animation 2s;
